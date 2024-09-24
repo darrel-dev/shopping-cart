@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="shopping">
+        <div class="desserts">
+            <h1>Desserts</h1>
+            <div class="items">
+                <div id="item1" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/img1.jpg">
+                        <button onclick="addToCart(1,'Waffle with Barries', 6.50)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Waffle</p>
+                    <h3>Waffle with Barries</h3>
+                    <h4>$6.50</h4>
+                </div>
+                <div id="item2" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/images2.jpg">
+                        <button onclick="addToCart(2, 'Vanilla Beans Creme Brulee', 7.00)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Creme Brulee</p>
+                    <h3>Vanilla Beans Creme Brulee</h3>
+                    <h4>$7.00</h4>
+                </div>
+                <div id="item3" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image3.jpg">
+                        <button  onclick="addToCart(3, 'Macaroni Mix of Five', 8.00)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Macaroni</p>
+                    <h3>Macaroni Mix of Five</h3>
+                    <h4>$8.00</h4>
+                </div>
+                <div id="item4" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image4.jpg">
+                        <button onclick="addToCart(4, 'Class Tiramisu', 5.50)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Tiramisu</p>
+                    <h3>Class Tiramisu</h3>
+                    <h4>$5.50</h4>
+                </div>
+                <div id="item5" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image5.jpg">
+                        <button onclick="addToCart(5, 'Pistachio Baklawa', 4.00)"><i class="fa-light fa-cart-plus"></i>  Add to cart</button>
+                    </div>
+                    <p>Baklawa</p>
+                    <h3>Pistachio Baklawa</h3>
+                    <h4>$4.00</h4>
+                </div>
+                <div id="item6" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image6.jpg">
+                        <button onclick="addToCart(6, 'Lemon Meringue Pie', 5.00)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Pie</p>
+                    <h3>Lemon Meringue Pie</h3>
+                    <h4>$5.00</h4>
+                </div>
+                <div id="item7" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image7.jpg">
+                        <button onclick="addToCart(7, 'Red Velvet Cake', 4.50)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Cake</p>
+                    <h3>Red Velvet Cake</h3>
+                    <h4>$4.50</h4>
+                </div>
+                <div id="item8" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image8.jpg">
+                        <button onclick="addToCart(8, 'Salted Caramel Brownie', 5.50)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Brownie</p>
+                    <h3>Salted Caramel Brownie</h3>
+                    <h4>$5.50</h4>
+                </div>
+                <div id="item9" class="item">
+                    <div class="imageDiv">
+                        <img src="./images/image9.jpg">
+                        <button onclick="addToCart(9, 'Vanilla Panna Cotta', 6.50)"><i class="fa-light fa-cart-plus"></i> Add to cart</button>
+                    </div>
+                    <p>Panna Cotta</p>
+                    <h3>Vanilla Panna Cotta</h3>
+                    <h4>$6.50</h4>
+                </div>
+            </div>
+        </div>
+        <div id="shopping_cart" class="shopping_cart">
+            <h2>Your Cart (0)</h2>
+            <div id="cart-items">
+                <i class="fa-solid fa-cookie-bite"></i>
+                <p>Your added items will appear here</p>
+            </div>
+            <div><span id="total"></span></div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

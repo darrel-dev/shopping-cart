@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.shopping{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    background-color: rgb(241, 239, 235);
+}
+
+.desserts{
+    width: 70%;
+}
+
+.items{
+    display: flex;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.item > h3 {
+    font-size: 1rem;
+}
+.item > p {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: grey;
+}
+.item > h4 {
+    font-size: 1rem;
+    color:  rgb(240, 123, 73);
+}
+
+.item{
+    width: 32%;
+}
+.item:hover {
+    border: 2px solid  rgb(240, 123, 73);
+}
+.imageDiv{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.imageDiv > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.desserts button {
+    border-color: rgb(229, 143, 106);
+    border-radius: 30px;
+    width: 45%;
+    position: absolute;
+    left: 30%;
+    bottom: -15px;
+    padding: 5px;
+}
+
+.shopping_cart {
+    width: 25%;
+    height: 250px;
+    background-color: white;
+    color: rgb(229, 143, 106);
+}
+#cart-items > div > i{
+    font-size: 6rem;
+    justify-items: center;
+}
+#cart-items > div > p{
+    font-size: 1rem;
+}
+#cart-items {
+    height: 100px;
+    overflow: scroll;
+}
+
+
+@media screen and (max-width: 767px) {
+    .shopping{
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .item{
+        width: 48%;
+    }
+    .desserts {
+        width: 100%;
+    }
+    .shopping_cart {
+        width: 48%;
+    }
+}
+
+
+@media screen and (max-width: 512px) {
+    .items{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .shopping{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .shopping_cart {
+        width: 100%;
+    }
+}
